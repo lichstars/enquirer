@@ -1,0 +1,30 @@
+
+<p class="text-right">
+	<a href='/api/list' class='btn btn-primary'>Refresh</a>
+</p>
+
+<table class="table table-striped">
+	<thead>
+	  <tr>
+	    <th>Date</th>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Email</th>
+	    <th>Phone</th>
+	    <th>Comments</th>
+	  </tr>
+	</thead>
+	<tbody>
+	 	<% @messages.each do |date, message| %>
+	    <tr>
+	      <td><%= date %></td>
+	      <td><%= message[:firstname] %></td>
+	      <td><%= message[:lastname] %></td>
+	      <td><%= message[:email] %></td>
+	      <td><%= message[:phone] %></td>
+	      <td><%= message[:comments] %></td>      
+	    </tr>
+	  	<% end %>
+	</tbody>
+</table>
+
