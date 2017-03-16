@@ -1,8 +1,8 @@
-# enquirer
-Basic application with React front end web application & Sinatra on the server side
+# Enquirer
+Basic application that allows enquiries to be submitted via a form and shows all enquiries that have been saved. Built with React on the front end & Sinatra on the server side with a yaml storage database.
 
 
-# Run Application on Docker 
+# Run Web Application on Docker 
 ```
 cd app
 docker build -t app .
